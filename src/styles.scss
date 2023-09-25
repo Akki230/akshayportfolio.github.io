@@ -1,0 +1,126 @@
+$primary-color: #dc8cdb;
+$green-color: #00B424;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #4a4a4a;
+}
+
+::selection {
+    background: $primary-color;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: $primary-color;
+    color: #fff;
+}
+
+.main-section {
+    min-height: calc(100vh - 134px);
+    overflow: auto;
+}
+
+.section-tittle {
+    font-size: 48px;
+    display: block;
+    color: #000a2d;
+    font-weight: 600;
+}
+
+.light-dark {
+    color: #57667e;
+}
+
+.sub-heading {
+    font-size: 25px;
+    font-weight: 700;
+    color: #1c165c;
+}
+
+.bg-main {
+    background: url('./assets/images/h1_hero.jpg.webp') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 740px;
+    padding-top: 130px;
+}
+
+.caption-heading {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ec5b53;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.main-text {
+    position: relative;
+    z-index: 2;
+    margin: 20px 0;
+    font-size: 64px;
+    color: #111111;
+    font-weight: 900;
+    line-height: 74px;
+
+    >em {
+        font-style: normal;
+        color: $primary-color;
+    }
+}
+
+.primary-heading {
+    color: $primary-color;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.secondary-heading {
+    color: #111111;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+    .bg-main {
+        background-position: left;
+        min-height: 550px;
+    }
+
+    .main-text {
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+    .primary-heading {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
