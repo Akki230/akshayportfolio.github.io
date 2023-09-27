@@ -12,8 +12,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-   slideConfig = {
-    slidesToShow: 1, 
+  slideConfig = {
+    slidesToShow: 1,
     slidesToScroll: 1,
     // autoplay: true,
     autoplaySpeed: 2000,
@@ -23,8 +23,10 @@ export class HomeComponent implements OnInit {
     cssEase: 'linear',
     infinite: true
   };
- 
-  
- 
+  sendEmail() {
+    window.location.assign("mailto:xyz@abc.com");
+  }
+
+
 
 }

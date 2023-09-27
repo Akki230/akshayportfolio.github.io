@@ -3,10 +3,9 @@
         <div class="row">
             <div class="col-lg-7 col-md-12">
                 <div class="slider-section mt-5">
-                    <span class="mb-5 caption-heading">Get Every Single Solutions.</span>
+                    <span class="mb-4 caption-heading">Welcome To My Portfolio.</span>
                     <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
                         <div ngxSlickItem class="slide header-text">
-                            <h6>Welcome to my portfolio</h6>
                             <h2 class="main-text">I’m Developer <br><em>Akshay Kumar!</em></h2>
                         </div>
                         <div ngxSlickItem class="slide header-text">
@@ -26,9 +25,10 @@
 </section>
 
 <!-- contact section -->
+<div class="contact-section"></div>
 
 <section class="my-5">
-    <div class="section-heading text-center">
+    <div class="section-heading">
         <h4>Contact <em>Me</em></h4>
     </div>
     <div class="contact-me">
@@ -37,106 +37,103 @@
                 <div class="col-lg-6">
                     <div class="contact-info">
                         <div class="icon">
-                            <i class="fa fa-phone"></i>
+                            <i class="fa-solid fa-envelope"></i>
                         </div>
                         <div>
                             <h4>Email</h4>
-                            <span>akki943632@gmail.com</span>
+                            <span role="button" tabindex="0" (click)="sendEmail()">akki943632@gmail.com</span>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-6 mt-4 mt-md-5">
-                            <div class="contact-info">
-                                <div class="icon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <div>
-                                    <h4>Mobile</h4>
-                                    <span>090-080-0760</span>
-                                </div>
-                            </div>
-                        </div> -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <a href="https://www.linkedin.com/in/akshay-kumar-5b2b38195" target="_blank" class="contact-info">
+                        <div class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div>
+                            <h4>Linkdin</h4>
+                            <span>Akshay Kumar</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Experiences -->
+<div class="experiences"></div>
 
 <section class="my-5">
     <div class="container">
-        <div class="d-flex justify-content-center">
-            <div class="section-heading">
-                <h4>Work <em>Experiences</em></h4>
-            </div>
+        <div class="section-heading">
+            <h4>Work <em>Experiences</em></h4>
         </div>
         <div>
-            <div>
-                <div class="row g-2 g-md-3 align-items-center">
-                    <div class="col-5">
-                        <div class="d-flex align-items-start">
-                            <i class="fa-regular fa-building me-3 fs-5 primary-heading mt-1"></i>
-                            <h3 class="primary-heading">Mphasis</h3>
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <span class="d-inline-block mx-2">–</span>
-                    </div>
-                    <div class="col-6">
-                        <h6>May 2022 – Till Date</h6>
+            <div class="row g-2 g-md-3 align-items-center">
+                <div class="col-5">
+                    <div class="d-flex align-items-start">
+                        <i class="fa-regular fa-building me-3 fs-5 primary-heading mt-1"></i>
+                        <h3 class="primary-heading">Mphasis</h3>
                     </div>
                 </div>
-                <div class="row align-items-center g-2 g-md-3 mt-1">
-                    <div class="col-5">
-                        <h3 class="secondary-heading ms-4 ms-md-5">Designation</h3>
-                    </div>
-                    <div class="col-1">
-                        <span class="d-inline-block mx-2">–</span>
-                    </div>
-                    <div class="col-6">
-                        <h6 class="light-dark">Delv Software Engineer</h6>
-                    </div>
+                <div class="col-1">
+                    <span class="d-inline-block mx-2">–</span>
+                </div>
+                <div class="col-6">
+                    <h6>May 2022 – Till Date</h6>
                 </div>
             </div>
-            <div class="mt-5">
-                <div class="row g-2 g-md-3 align-items-center">
-                    <div class="col-5">
-                        <div class="d-flex align-items-start">
-                            <i class="fa-regular fa-building me-3 fs-5 primary-heading mt-1"></i>
-                            <h3 class="primary-heading">Henceforth Solutions Private Ltd.</h3>
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <span class="d-inline-block mx-2">–</span>
-                    </div>
-                    <div class="col-5">
-                        <h6>July 2020 – April 2022</h6>
+            <div class="row align-items-center g-2 g-md-3 mt-1">
+                <div class="col-5">
+                    <h3 class="secondary-heading ms-4 ms-md-5">Designation</h3>
+                </div>
+                <div class="col-1">
+                    <span class="d-inline-block mx-2">–</span>
+                </div>
+                <div class="col-6">
+                    <h6 class="light-dark">Delv Software Engineer</h6>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <div class="row g-2 g-md-3 align-items-center">
+                <div class="col-5">
+                    <div class="d-flex align-items-start">
+                        <i class="fa-regular fa-building me-3 fs-5 primary-heading mt-1"></i>
+                        <h3 class="primary-heading">Henceforth Solutions Private Ltd.</h3>
                     </div>
                 </div>
-                <div class="row mt-1 g-2 g-md-3 align-items-center">
-                    <div class="col-5">
-                        <h3 class="secondary-heading ms-4 ms-md-5">Designation</h3>
-                    </div>
-                    <div class="col-1">
-                        <span class="d-inline-block mx-2">–</span>
-                    </div>
-                    <div class="col-6">
-                        <h6 class="light-dark">Front-End Developer</h6>
-                    </div>
+                <div class="col-1">
+                    <span class="d-inline-block mx-2">–</span>
+                </div>
+                <div class="col-5">
+                    <h6>July 2020 – April 2022</h6>
+                </div>
+            </div>
+            <div class="row mt-1 g-2 g-md-3 align-items-center">
+                <div class="col-5">
+                    <h3 class="secondary-heading ms-4 ms-md-5">Designation</h3>
+                </div>
+                <div class="col-1">
+                    <span class="d-inline-block mx-2">–</span>
+                </div>
+                <div class="col-6">
+                    <h6 class="light-dark">Front-End Developer</h6>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="about-section"></div>
 </section>
 
 <!-- Educations -->
 
 <section class="my-5">
     <div class="container pb-5">
-        <div class="d-flex justify-content-center">
-            <div class="section-heading">
-                <h4>Highest <em>Educations</em></h4>
-            </div>
+        <div class="section-heading">
+            <h4>Highest <em>Educations</em></h4>
         </div>
         <div>
             <div class="row g-2 g-md-3 align-items-center">
@@ -173,13 +170,10 @@
 
 <!-- Skills -->
 
-
 <section class="my-5">
-    <div class="container">
-        <div class="d-flex justify-content-center">
-            <div class="section-heading">
-                <h4>Technical <em>Skills</em></h4>
-            </div>
+    <div class="container pb-5">
+        <div class="section-heading">
+            <h4>Technical <em>Skills</em></h4>
         </div>
         <div class="d-flex align-items-center flex-wrap">
             <span class="skills-text">Angular</span>
@@ -199,6 +193,71 @@
             <span class="skills-text">Ubuntu</span>
         </div>
     </div>
+
+    <div class="project-section"></div>
 </section>
 
 <!-- Latest Projects -->
+
+<section class="my-5">
+    <div class="container">
+        <div class="section-heading">
+            <h4>Latest <em>Projects</em></h4>
+        </div>
+        <!-- project 1 -->
+        <div>
+            <h3 class="primary-heading mb-3">1. Good Connect</h3>
+            <div class="d-flex align-items-center mb-2">
+                <p class="para-text">
+                    <b class="light-dark me-3">Details:-</b>
+                    I am working on this Android Hybrid application. This is an insurance application for
+                    agents. This application was developed for the TATA AIA insurance company.
+                </p>
+            </div>
+            <div class="d-flex align-items-center">
+                <p class="para-text">
+                    <b class="light-dark me-3">Tech Stack:-</b>
+                    Angular, SQL, Javascript, HTML, CSS, Bootstrap, Git, Jira, Agile,
+                    Java APIs.
+                </p>
+            </div>
+        </div>
+        <!-- project 2 -->
+        <div class="mt-5">
+            <h3 class="primary-heading mb-3">2. Meeta Admin Panel</h3>
+            <div class="d-flex align-items-center mb-2">
+                <p class="para-text">
+                    <b class="light-dark me-3">Details:-</b>
+                    This is an admin panel for an events company. We can book any events and manage all
+                    things in this project.
+                </p>
+            </div>
+            <div class="d-flex align-items-center">
+                <p class="para-text">
+                    <b class="light-dark me-3">Tech Stack:-</b>
+                    Angular 12, Rxjs, Node JS APIs, HTML, CSS, Bootstrap4, Git, Jira, NPM Packages, Ngx
+                    Bootstrap, Responsive design.
+                </p>
+            </div>
+        </div>
+        <!-- project 3 -->
+        <div class="mt-5">
+            <h3 class="primary-heading mb-3">3. Henceforth Solutions Web</h3>
+            <div class="d-flex align-items-center mb-2">
+                <p class="para-text">
+                    <b class="light-dark me-3">Details:-</b>
+                    This is a Henceforth company website. I developed this full web to manage the companies
+                    things.
+                </p>
+            </div>
+            <div class="d-flex align-items-center">
+                <p class="para-text">
+                    <b class="light-dark me-3">Tech Stack:-</b>
+                    Angular 9, Rxjs, Node JS APIs, HTML, CSS, Bootstrap5, Git, Jira, NPM Packages, Ngx
+                    Bootstrap, Responsive design.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>

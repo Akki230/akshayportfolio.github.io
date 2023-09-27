@@ -1,6 +1,7 @@
 $primary-color: #dc8cdb;
 $green-color: #00B424;
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import "./assets/css/templatemo-eduwell-style.css";
 
 ul,
 li {
@@ -32,7 +33,12 @@ p {
     line-height: 25px;
     color: #4a4a4a;
 }
-
+.para-text{
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 0;
+    font-weight: 500;
+}
 ::selection {
     background: $primary-color;
     color: #fff;
@@ -66,19 +72,18 @@ p {
 }
 
 .bg-main {
-    background: url('./assets/images/h1_hero.jpg.webp') no-repeat center center;
+    background: url('./assets/images/h1_hero.jpg.webp') no-repeat center -120px;
     background-size: cover;
     width: 100%;
-    min-height: 740px;
+    min-height: 630px;
     padding-top: 130px;
 }
 
 .caption-heading {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     color: #ec5b53;
     text-transform: uppercase;
-    display: inline-block;
 }
 
 .main-text {
@@ -108,10 +113,10 @@ p {
     font-weight: 600;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .bg-main {
-        background-position: left;
-        min-height: 550px;
+        background-position: center;
+        min-height: 460px;
     }
 
     .main-text {
@@ -121,6 +126,15 @@ p {
     }
     .primary-heading {
         font-size: 18px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .bg-main {
+        background-position: left;        
+        padding-top: 90px;
+    }
+    .caption-heading {
+        font-size: 16px;
         font-weight: 500;
     }
 }
