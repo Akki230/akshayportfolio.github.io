@@ -153,6 +153,7 @@
   }
 
   & h4 {
+    color: #000000;
     font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;
@@ -194,34 +195,16 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .header-area {
-    background: rgb(219, 138, 222) !important;
-    background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%) !important;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .header-area {
-    background-color: #f7f7f7;
-    padding: 0px 15px;
-    height: 100px;
-    box-shadow: none;
-    text-align: center;
-  }
-
-  .header-area .container {
-    padding: 0px;
-  }
-
-  .header-area .main-nav {
-    overflow: hidden;
-  }
+@media screen and (max-width: 768px) {
 
   section.main-banner {
     margin-top: 0px;
   }
-
+  .contact-me {
+    background-position: left;
+    min-height: 400px;
+    border-radius: 0;
+  }
   .main-banner {
     padding-top: 180px;
   }
